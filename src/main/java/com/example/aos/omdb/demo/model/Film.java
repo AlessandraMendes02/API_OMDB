@@ -41,5 +41,5 @@ public class Film {
     private String imdbRating;
 
     @NonNull
-    private String genre;
+    private String gener;
 }
