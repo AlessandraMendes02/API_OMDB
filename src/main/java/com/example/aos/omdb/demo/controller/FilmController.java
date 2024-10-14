@@ -21,7 +21,7 @@ import com.example.aos.omdb.demo.service.FilmService;
 
 import lombok.AllArgsConstructor;
 
-@RequestMapping("api/v1/film/")
+@RequestMapping("/api/v1/film/")
 @RestController
 @AllArgsConstructor
 public class FilmController {
