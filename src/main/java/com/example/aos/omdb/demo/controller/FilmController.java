@@ -80,9 +80,9 @@ public class FilmController {
     }
 
     @GetMapping("/search")
-    public ResponseEntity<?> getFilmByTitleAndGenre(@RequestParam String title, @RequestParam String genre) {
+    public ResponseEntity<?> getFilmByTitleAndGener(@RequestParam String title, @RequestParam String gener) {
         try {
-            Film film = filmService.findByTitleAndGenre(title, genre);
+            Film film = filmService.findByTitleAndGener(title, gener);
             return new ResponseEntity<>(film, HttpStatus.OK); 
         } catch (FilmNotFoundException e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
